@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                     Barcode barcode = data.getParcelableExtra(BarcodeCaptureActivity.BarcodeObject);
                     mResultTextView.setText(barcode.displayValue);
                 } else mResultTextView.setText(R.string.no_barcode_captured);
-            } else Log.e(LOG_TAG, String.format(getString(R.string.barcode_error),
+            } else Log.e(LOG_TAG, String.format(getString(R.string.barcode_error_format),
                     CommonStatusCodes.getStatusCodeString(resultCode)));
         } else super.onActivityResult(requestCode, resultCode, data);
     }

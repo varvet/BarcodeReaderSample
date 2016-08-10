@@ -4,7 +4,7 @@
     <!-- Strings related to MainActivity-->
     <string name="scan_barcode_button">Scan barcode</string>
     <string name="no_barcode_captured">No barcode captured</string>
-    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+    <string name="barcode_error_format">"Error reading barcode: %1$s"</string>
 
     <!-- Strings related to barcode scanner -->
     <string name="ok">OK</string>
