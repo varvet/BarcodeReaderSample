@@ -1,6 +1,7 @@
 package com.varvet.barcodereadersample;
 
 import android.content.Intent;
+import android.graphics.Point;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
             if (resultCode == CommonStatusCodes.SUCCESS) {
                 if (data != null) {
                     Barcode barcode = data.getParcelableExtra(BarcodeCaptureActivity.BarcodeObject);
+                    Point[] p = barcode.cornerPoints;
                     mResultTextView.setText(barcode.displayValue);
                 } else mResultTextView.setText(R.string.no_barcode_captured);
             } else Log.e(LOG_TAG, String.format(getString(R.string.barcode_error_format),
