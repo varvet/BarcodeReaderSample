@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mResultTextView = (TextView) findViewById(R.id.result_textview);
+        mResultTextView = findViewById(R.id.result_textview);
 
-        Button scanBarcodeButton = (Button) findViewById(R.id.scan_barcode_button);
+        Button scanBarcodeButton = findViewById(R.id.scan_barcode_button);
         scanBarcodeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
