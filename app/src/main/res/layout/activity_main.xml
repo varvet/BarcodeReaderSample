@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="@string/no_barcode_captured"
         android:textSize="22sp"
+        android:autoLink="all"
         android:freezesText="true"
         android:layout_centerVertical="true"
         android:gravity="center"
